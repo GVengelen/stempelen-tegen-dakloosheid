@@ -9,7 +9,7 @@
             margin: 0;
             font-family: 'TiltWarp', sans-serif;
             padding: 0;
-            background-image: url('art/Achtergrond.jpg');
+            background-image: url('public/Achtergrond.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -21,16 +21,15 @@
 
         @font-face {
             font-family: 'TiltWarp';
-            src: url('art/fonts/TiltWarp-Regular-VariableFont_XROT,YROT.ttf') format('truetype');
+            src: url('public/fonts/TiltWarp-Regular-VariableFont_XROT,YROT.ttf') format('truetype');
         }
 
         .description {
             font-family: 'TiltWarp', sans-serif;
             color: #000;
-            margin: 20px;
+            margin: 40px;
             padding: 10px;
-            border-radius: 10px;
-            max-width: 80%;
+            max-width: 74%;
             font-size: 130%;
         }
 
@@ -102,25 +101,34 @@
             max-width: 75px;
             height: auto;
         }
+
+        a {
+            color: black;
+        }
+
+        .title-image {
+            margin: 100px 0;
+        }
     </style>
 </head>
 <body>
-    <img src="art/31.000.png" alt="Title Image" style="max-width: 80%; height: auto;">
+    <img src="public/31.000.png" class="title-image" alt="Title Image" style="max-width: 80%; height: auto;">
     <div class="description">
-        Om dit getal invoelbaar te maken worden er samen met publiek 31.000 stempels<br>
-        gezet op een 50+ meter lang doek. Elke stempel staat symbool voor een dakloos<br>
+        Om dit getal invoelbaar te maken worden er samen met publiek 31.000 stempels
+        gezet op een 50+ meter lang doek. Elke stempel staat symbool voor een dakloos
         persoon.<br><br>
-        Er zijn inmiddels 11.597 stempels gezet. Tussen 10-10 (Wereld Dakloze Mensendag) en<br>
-        11-11 (Sint Maarten) wordt dit doek hartje Utrecht afgemaakt en uitgerold. Stempel<br>
+
+        Er zijn inmiddels 11.597 stempels gezet. Tussen 10-10 (Wereld Dakloze Mensendag) en
+        11-11 (Sint Maarten) wordt dit doek hartje Utrecht afgemaakt en uitgerold. Stempel
         je mee?<br><br>
-        <small>(* Dit zijn de officiele cijfers van 2024. Inmiddels is dit aantal gestegen naar 33.000. Beide getallen<br>
-        zijn echter incompleet doordat allerlei groepen nog niet worden meegeteld. Die worden niet<br>
+        <small>(* Dit zijn de officiele cijfers van 2024. Inmiddels is dit aantal gestegen naar 33.000. Beide getallen
+        zijn echter incompleet doordat allerlei groepen nog niet worden meegeteld. Die worden niet
         vergeten, maar we beginnen met 31.000.)</small>
     </div>
     <div class="image-gallery">
-        <img src="art/Fotocredits Daisy Ranoe.jpg" alt="Fotocredits Daisy Ranoe">
-        <img src="art/Fotocredits Daisy Ranoe 3.jpg" alt="Fotocredits Daisy Ranoe 3">
-        <img src="art/Fotocredits Yassine Beqqali.jpg" alt="Fotocredits Yassine Beqqali">
+        <img src="public/Fotocredits Daisy Ranoe.jpg" alt="Fotocredits Daisy Ranoe">
+        <img src="public/Fotocredits Daisy Ranoe 3.jpg" alt="Fotocredits Daisy Ranoe 3">
+        <img src="public/Fotocredits Yassine Beqqali.jpg" alt="Fotocredits Yassine Beqqali">
     </div>
     <div class="event-details">
         <p>Stempel mee op één van deze data en locaties:</p>
@@ -137,16 +145,27 @@
             11 NOVEMBER | TIJD EN LOCATIE VOLGEN<br>
         </p>
     </div>
-    <div class="press-details">
-        <p>Klik hier voor meer informatie, interviews en perskit.</p>
+        <div class="description">
+        <a href="/">Klik hier voor meer informatie, interviews en perskit.</a><br><br>
+        Er zijn inmiddels 11.597 stempels gezet. Tussen 10-10 (Wereld Dakloze Mensendag) en<br>
+        11-11 (Sint Maarten) wordt dit doek hartje Utrecht afgemaakt en uitgerold. Stempel<br>
+        je mee?<br><br>
         <small>31.000 is een werk van kunstenaar Daisy Ranoe. Deze campagne is een initiatief van Daisy Ranoe en de
             Domkerk, in samenwerking met diverse Utrechtse organisaties die dakloosheid aan de kaak stellen, en met
-            financiële steun van het Initiatievenfonds, Gemeente Utrecht.
+            financiële steun van het Initiatievenfonds, Gemeente Utrecht.</small>
+    </div>
+    <div class="press-details">
+        
+        <small>
         </small>
     </div>
     <div class="footer">
-        <img src="art/images.png" alt="Footer Image 1">
-        <img src="art/Logo-initiatievenfonds-transparant-2.png" alt="Footer Image 2">
+        <a href="https://domkerk.nl/" target="_blank">
+            <img src="public/images.png" alt="Domkerk logo">
+        </a>
+        <a href="https://www.utrecht.nl/bestuur-en-organisatie/initiatief-en-invloed/uw-initiatief/initiatievenfonds" target="_blank">
+            <img src="public/Logo-initiatievenfonds-transparant-2.png" alt="Initiatievenfonds logo">
+        </a>
     </div>
 </body>
 </html>
