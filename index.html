@@ -1,174 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stempelen tegen dakloosheid</title>
-    <link rel="icon" href="public/favicon.png" type="image/png">
-    <link rel="preload" href="public/fonts/TiltWarp-Regular-VariableFont_XROT,YROT.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="icon" href="public/favicon.png" type="image/png" />
+    <link
+      rel="preload"
+      href="public/fonts/TiltWarp-Regular-VariableFont_XROT,YROT.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin="anonymous"
+    />
     <style>
-        @font-face {
-            font-family: 'TiltWarp';
-            src: url('public/fonts/TiltWarp-Regular-VariableFont_XROT,YROT.ttf') format('truetype');
-            font-display: swap;
-        }
+      @font-face {
+        font-family: "TiltWarp";
+        src: url("public/fonts/TiltWarp-Regular-VariableFont_XROT,YROT.ttf")
+          format("truetype");
+        font-display: swap;
+      }
 
-        body {
-            margin: 0;
-            font-family: 'TiltWarp', Arial, sans-serif;
-            padding: 0;
-            background-image: url('public/Achtergrond.webp');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
+      body {
+        margin: 0;
+        font-family: "TiltWarp", Arial, sans-serif;
+        padding: 0;
+        background-image: url("public/Achtergrond.webp");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
 
-        .description {
-            font-family: 'TiltWarp', sans-serif;
-            color: #000;
-            margin: 40px;
-            padding: 10px;
-            max-width: 74%;
-            font-size: 130%;
-        }
+      .description {
+        font-family: "TiltWarp", sans-serif;
+        color: #000;
+        margin: 40px;
+        padding: 10px;
+        max-width: 74%;
+        font-size: 130%;
+      }
 
+      .image-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 20px;
+        max-width: 80%;
+      }
+
+      .image-gallery img {
+        height: auto;
+      }
+
+      @media (min-width: 768px) {
         .image-gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 20px;
-            max-width: 80%;
+          flex-direction: row;
         }
 
         .image-gallery img {
-            height: auto;
+          max-width: 30%;
+
+          flex: 1 1 calc(33.333% - 20px);
+        }
+      }
+
+      @media (max-width: 767px) {
+        .image-gallery {
+          flex-direction: column;
         }
 
-        @media (min-width: 768px) {
-            .image-gallery {
-                flex-direction: row;
-            }
-
-            .image-gallery img {
-                max-width: 30%;
-
-                flex: 1 1 calc(33.333% - 20px);
-            }
+        .image-gallery img {
+          width: 100%;
         }
+      }
 
-        @media (max-width: 767px) {
-            .image-gallery {
-                flex-direction: column;
-            }
+      .event-details {
+        font-family: "TiltWarp", sans-serif;
+        color: #000;
+        text-align: center;
+        margin: 20px;
+        padding: 10px;
+        border-radius: 10px;
+        max-width: 80%;
+        font-size: 130%;
+      }
+      .press-details {
+        font-family: "TiltWarp", sans-serif;
+        color: #000;
+        margin: 20px;
+        padding: 10px;
+        border-radius: 10px;
+        max-width: 80%;
+        font-size: 130%;
+      }
 
-            .image-gallery img {
-                width: 100%;
-            }
-        }
+      .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-top: 5px;
+        padding: 10px;
+      }
 
-        .event-details {
-            font-family: 'TiltWarp', sans-serif;
-            color: #000;
-            text-align: center;
-            margin: 20px;
-            padding: 10px;
-            border-radius: 10px;
-            max-width: 80%;
-            font-size: 130%;
-        }
-        .press-details {
-            font-family: 'TiltWarp', sans-serif;
-            color: #000;
-            margin: 20px;
-            padding: 10px;
-            border-radius: 10px;
-            max-width: 80%;
-            font-size: 130%;
-        }
+      .footer img {
+        max-width: 75px;
+        height: auto;
+      }
 
-        .footer {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 20px;
-            margin-top: 20px;
-            padding: 10px;
-        }
+      a {
+        color: black;
+      }
 
-        .footer img {
-            max-width: 75px;
-            height: auto;
-        }
-
-        a {
-            color: black;
-        }
-
-        .title-image {
-            margin: 100px 0;
-        }
+      .title-image {
+        margin-top: 300px;
+        margin-bottom: 300px;
+      }
     </style>
-</head>
-<body>
-    <img src="/public/31.000.webp" class="title-image" alt="Title Image" style="max-width: 80%; height: auto;" width="800" height="600">
+  </head>
+  <body>
+    <img
+      src="public/31000.webp"
+      class="title-image"
+      alt="Title Image"
+      style="max-width: 80%; height: auto"
+      width="800"
+      height="600"
+    />
     <div class="description">
-        Om dit getal invoelbaar te maken worden er samen met publiek 31.000 stempels
-        gezet op een 50+ meter lang doek. Elke stempel staat symbool voor een dakloos
-        persoon.<br><br>
+      Om dit getal invoelbaar te maken worden er samen met publiek 31.000
+      stempels gezet op een 50+ meter lang doek. Elke stempel staat symbool voor
+      een dakloos persoon.<br /><br />
 
-        Er zijn inmiddels 11.597 stempels gezet. Tussen 10-10 (Wereld Dakloze Mensendag) en
-        11-11 (Sint Maarten) wordt dit doek hartje Utrecht afgemaakt en uitgerold. Stempel
-        je mee?<br><br>
-        <small>(* Dit zijn de officiele cijfers van 2024. Inmiddels is dit aantal gestegen naar 33.000. Beide getallen
-        zijn echter incompleet doordat allerlei groepen nog niet worden meegeteld. Die worden niet
-        vergeten, maar we beginnen met 31.000.)</small>
+      Er zijn inmiddels 11.597 stempels gezet. Tussen 10-10 (Wereld Dakloze
+      Mensendag) en 11-11 (Sint Maarten) wordt dit doek hartje Utrecht afgemaakt
+      en uitgerold. Stempel je mee?<br /><br />
+      <small
+        >(* Dit zijn de officiele cijfers van 2024. Inmiddels is dit aantal
+        gestegen naar 33.000. Beide getallen zijn echter incompleet doordat
+        allerlei groepen nog niet worden meegeteld. Die worden niet vergeten,
+        maar we beginnen met 31.000.)</small
+      >
     </div>
     <div class="image-gallery">
-        <img src="public/Fotocredits Daisy Ranoe.webp" alt="Fotocredits Daisy Ranoe" width="400" height="300">
-        <img src="public/Fotocredits Daisy Ranoe 3.webp" alt="Fotocredits Daisy Ranoe 3" width="400" height="300">
-        <img src="public/Fotocredits Yassine Beqqali.webp" alt="Fotocredits Yassine Beqqali" width="400" height="300">
+      <img
+        src="public/Fotocredits Daisy Ranoe.webp"
+        alt="Fotocredits Daisy Ranoe"
+        width="400"
+        height="300"
+      />
+      <img
+        src="public/Fotocredits Daisy Ranoe 3.webp"
+        alt="Fotocredits Daisy Ranoe 3"
+        width="400"
+        height="300"
+      />
+      <img
+        src="public/Fotocredits Yassine Beqqali.webp"
+        alt="Fotocredits Yassine Beqqali"
+        width="400"
+        height="300"
+      />
     </div>
     <div class="event-details">
-        <p>Stempel mee op één van deze data en locaties:</p>
-        <p>
-            10 OKTOBER | 11:00 - 15:00 | DOMPLEIN*<br>
-            17 OKTOBER | 16:00 - 21:00 | DOMKERK (TIJDENS STADSDINER)<br>
-            24 OKTOBER | 11:00 - 15:00 | DOMPLEIN*<br>
-            26 OKTOBER | 12:00 - 16:00 | DOMKERK<br>
-            6 NOVEMBER | 17:00 - 21:00 | DOMKERK (TIJDENS EVENT MANTEL)<br>
-            8 NOVEMBER 18:00 - 22:00 | DOMKERK (TIJDENS SINT MAARTEN PARADE)
-        </p>
-        <small>* Bij slecht weer in de DOMKERK</small>
-        <p>Uitrollen doek:<br>
-            11 NOVEMBER | TIJD EN LOCATIE VOLGEN<br>
-        </p>
+      <p>Stempel mee op één van deze data en locaties:</p>
+      <p>
+        10 OKTOBER | 11:00 - 15:00 | DOMPLEIN*<br />
+        17 OKTOBER | 16:00 - 21:00 | DOMKERK (TIJDENS STADSDINER)<br />
+        24 OKTOBER | 11:00 - 15:00 | DOMPLEIN*<br />
+        26 OKTOBER | 12:00 - 16:00 | DOMKERK<br />
+        6 NOVEMBER | 17:00 - 21:00 | DOMKERK (TIJDENS EVENT MANTEL)<br />
+        8 NOVEMBER 18:00 - 22:00 | DOMKERK (TIJDENS SINT MAARTEN PARADE)
+      </p>
+      <small>* Bij slecht weer in de DOMKERK</small>
+      <p>
+        Uitrollen doek:<br />
+        11 NOVEMBER | TIJD EN LOCATIE VOLGEN<br />
+      </p>
     </div>
-        <div class="description">
-        <a href="/public/Mediakit 31.000 Daisy Ranoe.zip">Klik hier voor meer informatie, interviews en perskit.</a><br><br>
-        Er zijn inmiddels 11.597 stempels gezet. Tussen 10-10 (Wereld Dakloze Mensendag) en<br>
-        11-11 (Sint Maarten) wordt dit doek hartje Utrecht afgemaakt en uitgerold. Stempel<br>
-        je mee?<br><br>
-        <small>31.000 is een werk van kunstenaar Daisy Ranoe. Deze campagne is een initiatief van Daisy Ranoe en de
-            Domkerk, in samenwerking met diverse Utrechtse organisaties die dakloosheid aan de kaak stellen, en met
-            financiële steun van het Initiatievenfonds, Gemeente Utrecht.</small>
-    </div>
-    <div class="press-details">
-        
-        <small>
-        </small>
+    <div class="description">
+      <a href="/public/Mediakit 31.000 Daisy Ranoe.zip"
+        >Klik hier voor meer informatie, interviews en perskit.</a
+      ><br /><br />
+      <small
+        >31.000 is een werk van kunstenaar <a href="https://www.daisyranoe.com" target="_blank">Daisy Ranoe</a>. Deze campagne is een
+        initiatief van Daisy Ranoe en de Domkerk, in samenwerking met diverse
+        Utrechtse organisaties die dakloosheid aan de kaak stellen, en met
+        financiële steun van het Initiatievenfonds, Gemeente Utrecht.</small
+      >
     </div>
     <div class="footer">
-        <a href="https://domkerk.nl/" target="_blank">
-            <img src="public/images.webp" alt="Domkerk logo" width="75" height="75">
-        </a>
-        <a href="https://www.utrecht.nl/bestuur-en-organisatie/initiatief-en-invloed/uw-initiatief/initiatievenfonds" target="_blank">
-            <img src="public/Logo-initiatievenfonds-transparant-2.webp" alt="Initiatievenfonds logo" width="75" height="75">
-        </a>
+      <a href="https://domkerk.nl/" target="_blank">
+        <img
+          src="public/images.webp"
+          alt="Domkerk logo"
+          width="75"
+          height="75"
+        />
+      </a>
+      <a
+        href="https://www.utrecht.nl/bestuur-en-organisatie/initiatief-en-invloed/uw-initiatief/initiatievenfonds"
+        target="_blank"
+      >
+        <img
+          src="public/Logo-initiatievenfonds-transparant-2.webp"
+          alt="Initiatievenfonds logo"
+          width="75"
+          height="75"
+        />
+      </a>
     </div>
-</body>
+  </body>
 </html>
