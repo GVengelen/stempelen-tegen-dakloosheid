@@ -52,7 +52,8 @@
         max-width: 80%;
       }
 
-      .image-gallery img {
+      .image-gallery img,
+      .image-gallery video {
         height: auto;
       }
 
@@ -61,9 +62,10 @@
           flex-direction: row;
         }
 
-        .image-gallery img {
+        .image-gallery img,
+        .image-gallery video {
           max-width: 30%;
-
+          object-fit: cover;
           flex: 1 1 calc(33.333% - 20px);
         }
       }
@@ -73,7 +75,8 @@
           flex-direction: column;
         }
 
-        .image-gallery img {
+        .image-gallery img,
+        .image-gallery video {
           width: 100%;
         }
       }
@@ -180,6 +183,27 @@
         Uitrollen doek:<br />
         11 NOVEMBER | TIJD EN LOCATIE VOLGEN<br />
       </p>
+    </div>
+    <div class="image-gallery">
+      <img
+        src="public/stempelen_kind.jpeg"
+        alt="Stempelen kind"
+        width="400"
+        height="300"
+      />
+      <video width="400" height="300" controls>
+        <source
+          src="https://ik.imagekit.io/openpeople/Daisy%20Ranoe%20-%20Project%2031.000_dBTw-8-wT9.mp4?updatedAt=1760015494288"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+      <img
+        src="public/stempelen hand.jpeg"
+        alt="Stempelen hand"
+        width="400"
+        height="300"
+      />
     </div>
     <div class="description">
       <a href="/public/Mediakit 31.000 Daisy Ranoe.zip"
