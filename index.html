@@ -53,7 +53,8 @@
       }
 
       .image-gallery img,
-      .image-gallery video {
+      .image-gallery video,
+      .image-gallery > div {
         height: auto;
       }
 
@@ -63,10 +64,16 @@
         }
 
         .image-gallery img,
-        .image-gallery video {
+        .image-gallery video,
+        .image-gallery > div {
           max-width: 30%;
           object-fit: cover;
           flex: 1 1 calc(33.333% - 20px);
+        }
+
+        .image-gallery > div video {
+          width: 100%;
+          max-width: none;
         }
       }
 
@@ -76,7 +83,12 @@
         }
 
         .image-gallery img,
-        .image-gallery video {
+        .image-gallery video,
+        .image-gallery > div {
+          width: 100%;
+        }
+
+        .image-gallery > div video {
           width: 100%;
         }
       }
@@ -191,13 +203,18 @@
         width="400"
         height="300"
       />
-      <video width="400" height="300" controls>
-        <source
-          src="https://ik.imagekit.io/openpeople/Daisy%20Ranoe%20-%20Project%2031.000_dBTw-8-wT9.mp4?updatedAt=1760015494288"
-          type="video/mp4"
-        />
-        Your browser does not support the video tag.
-      </video>
+      <div>
+        <video width="400" height="300" controls>
+          <source
+            src="https://ik.imagekit.io/openpeople/Daisy%20Ranoe%20-%20Project%2031.000_dBTw-8-wT9.mp4?updatedAt=1760015494288"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+        <p style="text-align: center; margin-top: 5px; font-size: 90%">
+          Film door Jochie van de reels
+        </p>
+      </div>
       <img
         src="public/stempelen hand.jpeg"
         alt="Stempelen hand"
